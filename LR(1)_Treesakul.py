@@ -33,7 +33,7 @@ class LR1:
         for sym in self.nonterminal:
             self.first[sym] = self.find_first(sym)
 
-    def inittialize_states(self):
+    def initialize_states(self):
 
         element = ("S'", tuple(), ("S",) , "$")
         self.stack.append(self.closure(element))
@@ -164,7 +164,7 @@ class LR1:
 
     def construct(self):
         self.compute_first()
-        self.inittialize_states()
+        self.initialize_states()
         state = 0
         #stack =
         while(True):
