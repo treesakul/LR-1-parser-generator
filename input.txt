@@ -1,0 +1,6 @@
+S' S C
+c d
+S' S
+S C C
+C c C
+C d
